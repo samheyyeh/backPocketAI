@@ -1,0 +1,90 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #f3f3f3, #d6e6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#chat-container {
+  width: 90%;
+  max-width: 600px;
+  height: 450px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user {
+  align-self: flex-end;
+  background: #007bff;
+  color: white;
+}
+
+.bot {
+  align-self: flex-start;
+  background: #e0ffe0;
+  color: #333;
+}
+
+#input-container {
+  display: flex;
+  width: 90%;
+  max-width: 600px;
+  margin-top: 15px;
+}
+
+#message-input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+#send-btn {
+  padding: 12px 18px;
+  margin-left: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#send-btn:hover {
+  background: #0056b3;
+}
+
